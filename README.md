@@ -15,7 +15,7 @@ Simply add "-e" to turn into evaluation mode:
 python dcwh.py  -e --network google  --dataset cifar100 --len 32 --path cifar100_google_32.pth
 ```
 
-## Results
+# Results
 
 The experimental results of our implementation are shown as follows:
 <table>
