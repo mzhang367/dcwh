@@ -7,13 +7,16 @@ python dcwh.py  --network google  --dataset cifar100 --len 32 --path cifar100_go
 ```
 This will train a model using pre-trained GoogLeNet architecture with 32-bit codes on CIFAR-100 dataset. The model will be saved as "cifar100_google_32.pth" under the directory "./checkpoint".
 
-##Evaluation
+## Evaluation
+
 Simply add "-e" to turn into evaluation mode:
+
  ```
 python dcwh.py  -e --network google  --dataset cifar100 --len 32 --path cifar100_google_32.pth
 ```
 
-#Results
+## Results
+
 The experimental results of our implementation are shown as follows:
 <table>
 	<tbody>
@@ -46,6 +49,6 @@ The experimental results of our implementation are shown as follows:
 	</tbody>
 </table>
 Our results on CIFAR-10 are better than the original paper, which were 94.0%, 95.0%, 95.4%, and 95.2% under 16-bit, 24-bit, 32-bit, and 48-bit, respectively. 
-
+<br/><br/>
 For CIFAR-100 dataset, our results are comparable to the original paper since DCWH achieved 75.70% and 76.90% under 32-bit and 48-bit codes, respectively.
  
